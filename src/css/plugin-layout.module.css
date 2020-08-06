@@ -1,0 +1,220 @@
+.script-plugin {
+  max-width: 1100px;
+  width: 1100px;
+  height: calc(100% - 56px);
+}
+
+.modal-content {
+  height: 100%;
+}
+
+.script-plugin-header {
+  font-size: 24px;
+}
+
+.script-plugin-content {
+  padding: 0;
+  height: calc(100% - 56px);
+  overflow: hidden;
+}
+
+.script-plugin-toolbar {
+  height: 50px;
+  width: 100%;
+  border-bottom: 2px solid #eeeeee;
+  display: flex;
+  flex-direction: row; 
+}
+
+.script-plugin-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: calc(100% - 0px);
+}
+
+.script-plugin-wraper-left {
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #eee;
+}
+
+.script-plugin-wraper-right {
+  width: 50%;
+  height: 100%;
+  border-left: 1px solid #eee;
+}
+
+.script-plugin-toolbar-left {
+  display: flex;
+  height: 30px;
+  background-color: #ff8000;
+  line-height: 26px;
+  padding: 5px 10px 0 10px;
+}
+
+.script-header {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.add-script-icon {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #f09f3f;
+  -webkit-transform: scale(.8);
+  transform: scale(.8);
+  vertical-align: -1px;
+}
+
+.script-tabs-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.script-tab {
+  display: inline-block;
+  height: 26px;
+  padding: 0 16px;
+  line-height: 26px;
+  text-align: center;
+  color: hsla(0,0%,100%,.9);
+  background-color: #e77502;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.script-tab:hover {
+  background-color: #cf742b;
+}
+
+.script-tabs {
+  height: 25px;
+  display: flex;
+  width: max-content;
+}
+
+.script-tabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.add-new-script {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 26px;
+  margin-left: 5px;
+}
+
+.add-script-button {
+  width: 14px;
+  height: 14px;
+  line-height: 10px;
+  border-radius: 2px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.script-tab-dropdown {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 0 0 0 5px;
+  cursor: pointer;
+}
+
+.script-tab-dropdown-icon {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+  color: #949494;
+  -webkit-transform: scale(.8);
+  transform: scale(.8);
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.selected-script-tab {
+  color: #000;
+  background-color: #fff;
+  cursor: default;
+}
+
+.selected-script-tab:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.script-plugin-toolbar-right {
+  height: 50px;
+  padding: 6px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.script-button {
+  margin-right: 5px;
+}
+
+.dropdown-icon {
+  font-size: 14px;
+  margin-right: 10px;
+  color: #8c8c8c;
+}
+
+.script-dropdown-item {
+  padding: 3px 12px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #202428;
+  cursor: pointer;
+}
+
+.script-plugin-run-button {
+  display: inline-block;
+  height: 30px;
+  box-sizing: border-box;
+  background-color: #ff8000;
+  line-height: 30px;
+  text-align: center;
+}
+
+.script-plugin-coder {
+  width: 100%;
+  height: calc(100% - 81px);
+  border-bottom: 2px solid #eee;
+}
+
+.script-plugin-result {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.run-button {
+  height: 30px;
+  width: 100%;
+}
+
+.editor-container {
+  width: 100%;
+  height: 100%;
+}
+
+.editor {
+  width: 100%;
+  height: 100%;
+}
+
+.error {
+  padding: 10px;
+  background-color: #250201;
+  color: #e27e7b;
+  border-radius: 4px;
+}

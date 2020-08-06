@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button>button</button>
+  <script>
+
+  // function* foo(x) {
+  //   var y = 2 * (yield (x + 1));
+  //   console.log(y);
+  //   var z = yield (y / 3);
+  //   return (x + y + z);
+  // }
+
+  // var a = foo(5);
+  // a.next() // Object{value:6, done:false}
+  // a.next() // Object{value:NaN, done:false}
+  // a.next() // Object{value:NaN, done:true}
+
+  // var b = foo(5);
+  // b.next() // { value:6, done:false }
+  // b.next(1) // { value:8, done:false }
+  // b.next(13) 
+    // let ger;
+
+    document.querySelector('button').addEventListener('click', () => {
+      console.log('click');
+      ger.next('value');
+    });
+
+    const f1 = () => {
+      return new Promise((resolve, reject) => {
+        const g = function* gen() {
+          const value = yield;
+          resolve(value)
+        };
+        ger = g();
+        ger.next();
+      });
+    }
+
+    async function name(params) {
+      const a = await f1();
+      console.log(a);
+      console.log('b');
+    }
+
+    name();
+
+    // console.log(func.resolve);
+    // // func();
+   
+
+    // const p = Promise.resolve();
+    // console.log(p);
+
+
+
+
+    // const p = new Promise(() => {
+
+    // });
+
+    // console.log(p);
+    // p.resolve('wwww');
+
+
+    // p.then((res) => {
+    //   console.log(res);
+    // });
+
+    // p.then((res) => {
+    //   console.log(res);
+    // });
+    
+    // (async function name() {
+    //   try{
+    //     const result = await f1();
+    //     console.log(result);
+    //     console.log('11111');
+    //   } catch(err) {
+    //     console.log(err);
+    //   }
+    // })();     
+  </script>
+</body>
+</html>
